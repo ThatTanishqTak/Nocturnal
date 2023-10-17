@@ -9,8 +9,8 @@ int main()
 	InitWindow(windowWidth, windowHeight, "Nocturnal");
 	SetTargetFPS(60);
 
-	Player player;
 	Enemy enemy;
+	Player player;
 
 	while (!WindowShouldClose())
 	{

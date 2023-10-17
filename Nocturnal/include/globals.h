@@ -5,7 +5,7 @@
 #include "raylib.h"
 #include <list>
 
-extern std::list<GameObjects*> gameObjects; //Game objects system
+extern std::list<GameObjects*> gameObjects; // Game objects system
 
 // Window dimensions
 extern const int windowWidth;
@@ -16,5 +16,7 @@ extern Vector2 playerPos;
 extern float radius;
 
 // Enemy variables
+extern Vector2 enemyPos;
+extern float spawnTime;
 
 #endif

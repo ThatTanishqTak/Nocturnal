@@ -9,3 +9,7 @@ const int windowHeight = 720;
 // Player variables
 Vector2 playerPos = GetMousePosition();
 float radius = 10.0f;
+
+// Enemy variables
+Vector2 enemyPos = { GetRandomValue(10, windowWidth - 100), GetRandomValue(10, windowHeight - 100) };
+float spawnTime = 0.0f;

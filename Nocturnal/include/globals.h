@@ -15,4 +15,6 @@ extern const int windowHeight;
 extern Vector2 playerPos;
 extern float radius;
 
+// Enemy variables
+
 #endif

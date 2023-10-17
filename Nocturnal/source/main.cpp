@@ -1,6 +1,7 @@
 #include "globals.h"
 #include "gameobjects.h"
 #include "raylib.h"
+#include "enemy.h"
 #include "player.h"
 
 int main()
@@ -9,18 +10,20 @@ int main()
 	SetTargetFPS(60);
 
 	Player player;
+	Enemy enemy;
 
 	while (!WindowShouldClose())
 	{
-		for (GameObjects* gameObects : gameObjects) { gameObects->update(); }
+		for (GameObjects* gameObjects : gameObjects) { gameObjects->update(); }
 
 		BeginDrawing();
 		ClearBackground(BLACK);
 
-		for (GameObjects* gameObects : gameObjects) { gameObects->render(); }
+		for (GameObjects* gameObjects : gameObjects) { gameObjects->render(); }
 
 		EndDrawing();
 	}
+
 	CloseWindow();
 
 	return 0;

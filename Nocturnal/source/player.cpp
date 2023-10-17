@@ -14,5 +14,5 @@ void Player::update()
 
 void Player::render()
 {
-	if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) { DrawCircle(playerPos.x, playerPos.y, radius, RED); }
+	if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) { DrawCircle(static_cast<int>(playerPos.x), static_cast<int>(playerPos.y), radius, RED); }
 }

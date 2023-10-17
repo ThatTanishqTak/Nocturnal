@@ -1,11 +1,14 @@
 #include "globals.h"
 #include "gameobjects.h"
 #include "raylib.h"
+#include "player.h"
 
 int main()
 {
 	InitWindow(windowWidth, windowHeight, "Nocturnal");
 	SetTargetFPS(60);
+
+	Player player;
 
 	while (!WindowShouldClose())
 	{

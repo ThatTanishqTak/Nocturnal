@@ -1,4 +1,5 @@
 #include "enemy.h"
+#include <iostream>
 
 Enemy::Enemy() { gameObjects.push_back(this); }
 
@@ -15,7 +16,6 @@ void Enemy::update()
 		enemyPos = { static_cast<float>(GetRandomValue(10, windowWidth - 100)), static_cast<float>(GetRandomValue(10, windowHeight - 100)) };
 		spawnTime = 0.0f;
 	}
-
 }
 
 void Enemy::render()

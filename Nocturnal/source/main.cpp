@@ -10,7 +10,7 @@
 int main()
 {
 	InitWindow(windowWidth, windowHeight, "Nocturnal"); // Initialize window
-	SetTargetFPS(60); // Lock FPS
+	SetTargetFPS(60); // Lock the FPS
 
 	// Instansiate game objects
 	Enemy enemy;

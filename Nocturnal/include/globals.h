@@ -21,7 +21,8 @@ extern float radius;
 
 // Enemy variables
 extern Vector2 enemyPos;
-extern float spawnTime;
 extern Rectangle enemyRec;
+extern float spawnTime;
+extern bool isAlive;
 
 #endif

@@ -1,5 +1,4 @@
 #include "enemy.h"
-#include <iostream>
 
 Enemy::Enemy() { gameObjects.push_back(this); }
 

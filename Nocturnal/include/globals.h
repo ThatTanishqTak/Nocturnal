@@ -1,9 +1,13 @@
+// The global variable header file
+
 #ifndef GLOBALS_H
 #define GLOBALS_H
 
 #include "gameobjects.h"
 #include "raylib.h"
 #include <list>
+
+			/* EVERY VARIABLE HERE IS TO BE ALSO DEFINED IN THE "globals.cpp" FILE */
 
 extern std::list<GameObjects*> gameObjects; // Game objects system
 

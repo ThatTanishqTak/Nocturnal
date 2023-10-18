@@ -1,3 +1,6 @@
+// The main game file
+
+// All the header files
 #include "globals.h"
 #include "gameobjects.h"
 #include "raylib.h"
@@ -6,25 +9,27 @@
 
 int main()
 {
-	InitWindow(windowWidth, windowHeight, "Nocturnal");
-	SetTargetFPS(60);
+	InitWindow(windowWidth, windowHeight, "Nocturnal"); // Initialize window
+	SetTargetFPS(60); // Lock FPS
 
+	// Instansiate game objects
 	Enemy enemy;
 	Player player;
 
+	// The main game loop
 	while (!WindowShouldClose())
 	{
-		for (GameObjects* gameObjects : gameObjects) { gameObjects->update(); }
+		for (GameObjects* gameObjects : gameObjects) { gameObjects->update(); } // The updtae loop
 
 		BeginDrawing();
 		ClearBackground(BLACK);
 
-		for (GameObjects* gameObjects : gameObjects) { gameObjects->render(); }
+		for (GameObjects* gameObjects : gameObjects) { gameObjects->render(); } // The render loop
 
 		EndDrawing();
 	}
 
-	CloseWindow();
+	CloseWindow(); // De-Initialize window
 
-	return 0;
+	return 0; // Exit code
 }

@@ -4,6 +4,7 @@
 #include "globals.h"
 #include "gameobjects.h"
 #include "raylib.h"
+#include "userinterface.h"
 #include "enemy.h"
 #include "player.h"
 
@@ -12,7 +13,8 @@ int main()
 	InitWindow(windowWidth, windowHeight, "Nocturnal"); // Initialize window
 	SetTargetFPS(60); // Lock the FPS
 
-	// Instansiate game objects
+	// Instantiate game objects
+	UserInterface userInterface;
 	Enemy enemy;
 	Player player;
 

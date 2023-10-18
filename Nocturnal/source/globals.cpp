@@ -19,3 +19,5 @@ Vector2 enemyPos = { GetRandomValue(10, windowWidth - 100), GetRandomValue(10, w
 Rectangle enemyRec = { enemyPos.x, enemyPos.y, 50, 50 };
 float spawnTime = 0.0f;
 bool isAlive = true;
+
+// UserInterface Variables

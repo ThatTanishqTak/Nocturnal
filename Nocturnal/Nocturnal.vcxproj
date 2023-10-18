@@ -143,6 +143,7 @@
     <ClCompile Include="source\player.cpp" />
     <ClCompile Include="source\globals.cpp" />
     <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\userinterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\enemy.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="include\raylib.h" />
     <ClInclude Include="include\raymath.h" />
     <ClInclude Include="include\rlgl.h" />
+    <ClInclude Include="include\userinterface.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="lib\raylib.dll" />

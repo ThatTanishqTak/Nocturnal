@@ -25,4 +25,6 @@ extern Rectangle enemyRec;
 extern float spawnTime;
 extern bool isAlive;
 
+// UserInterface Variables
+
 #endif

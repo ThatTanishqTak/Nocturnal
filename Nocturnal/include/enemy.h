@@ -16,6 +16,7 @@ public:
 	virtual void render(); // Enemy render function
 
 private:
+	void spawnEnemy();
 };
 
 #endif

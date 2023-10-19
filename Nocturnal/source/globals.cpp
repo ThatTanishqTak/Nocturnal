@@ -21,3 +21,6 @@ float spawnTime = 0.0f;
 bool isAlive = true;
 
 // UserInterface Variables
+float gameTime = 0.0f;
+int score = 0;
+int bullets = 6;

@@ -26,5 +26,8 @@ extern float spawnTime;
 extern bool isAlive;
 
 // UserInterface Variables
+extern float gameTime;
+extern int score;
+extern int bullets;
 
 #endif

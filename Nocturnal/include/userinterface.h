@@ -3,6 +3,8 @@
 
 #include "globals.h"
 #include "raylib.h"
+#include <sstream>
+#include <iomanip>
 
 class UserInterface : public GameObjects
 {
@@ -15,6 +17,8 @@ public:
 
 private:
 	Texture2D background;
+
+	std::string formatTime(float gameTime);
 };
 
 #endif

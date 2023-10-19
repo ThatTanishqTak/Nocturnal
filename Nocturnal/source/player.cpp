@@ -20,13 +20,14 @@ void Player::update()
 			bullets--;
 		}
 	}
-	if (bullets <= 0) { bullets = 0; }
+	if (bullets <= 0) { bullets = 0; } // Prevents the bullet count to go bellow zero
 
-	if (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)) { bullets = 6; }
+	if (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)) { bullets = 6; } // Reload mechanic
 }
 
 void Player::render()
 {
+	// Only render if bullet count is greater than zero
 	if (bullets > 0)
 	{
 		if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))

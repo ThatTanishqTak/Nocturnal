@@ -16,7 +16,7 @@ public:
 	virtual void render(); // Enemy render function
 
 private:
-	void spawnEnemy();
+	void spawnEnemy(); // Function to spawn the enemies
 };
 
 #endif

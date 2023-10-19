@@ -21,7 +21,7 @@ int main()
 	// The main game loop
 	while (!WindowShouldClose())
 	{
-		for (GameObjects* gameObjects : gameObjects) { gameObjects->update(); } // The updtae loop
+		for (GameObjects* gameObjects : gameObjects) { gameObjects->update(); } // The update loop
 
 		BeginDrawing();
 		ClearBackground(BLACK);

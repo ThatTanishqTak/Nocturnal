@@ -1,4 +1,4 @@
-// The userinterface class
+// The user interface class
 
 #ifndef USERINTERFACE_H
 #define USERINTERFACE_H
@@ -18,8 +18,8 @@ public:
 	virtual void render(); // Virtual render
 
 private:
-	Texture2D background;
-	std::string formatTime(float gameTime); // Funtion to convert time(in seconds) to XX:XX format
+	Texture2D background; // variable to store the background texture
+	std::string formatTime(float gameTime); // Function to convert time(in seconds) to XX:XX format
 };
 
 #endif
